@@ -46,7 +46,7 @@ body {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: 'RobotoSlab';
+	font-family: 'Roboto Slab';
 	font-size: 14px;
 }
 .wrap {
@@ -56,6 +56,7 @@ body {
 #home {
 	height: 100vh;
 	background: url(../img/home-bg.jpg)center/cover;
+	text-align: center;
 }
 .home-header {
 	display: -webkit-flex;
@@ -80,10 +81,15 @@ body {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 264px;
 }
 .header-menu-item {
 	display: inline-block;
 	margin-right: 30px;
+}
+.header-menu-item:hover {
+	text-decoration: underline;
+	color: #fff;
 }
 .header-menu-item:last-child{
 	margin-right: 0;
@@ -92,4 +98,81 @@ body {
 	font-family: 'Montserrat';
 	color: #fff;
 	text-decoration: none;
+}
+.home-title {
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: 58px;
+	color:#fff;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.home-subtitle {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	text-transform: capitalize;
+	margin-bottom: 70px;
+}
+.home-btn {
+	background-color: transparent;
+	padding: 20px 35px;
+	font-family: 'Montserrat';
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #fff;
+}
+
+/****Services***/
+#services {
+	text-align: center;
+}
+.services-title {
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	color: #555;
+	font-size: 20px;
+	position: relative;
+	margin-bottom: 60px;
+}
+.services-title:after {
+	display: block;
+	position: absolute;
+	content: '';
+	background-color: #555;
+	height: 2px;
+	width: 50px;
+	bottom: -30px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.services-subtitle {
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 70px;
+}
+.services-cart-area {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.services-cart-logo {
+	font-size: 40px;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	color: #c0301c;
+	background-color: transparent;
+	border: 2px solid #dddddd;
+	border-radius: 50%;
+}
+.services-cart-logo:hover {
+	background-color: #c0301c;
+	color: #fff;
 }
