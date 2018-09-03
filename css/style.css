@@ -41,6 +41,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*******Fonts******/
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    src: url('FontAwesome5FreeRegular.eot');
+    src: url('FontAwesome5FreeRegular.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome5FreeRegular.woff2') format('woff2'),
+        url('FontAwesome5FreeRegular.woff') format('woff'),
+        url('FontAwesome5FreeRegular.ttf') format('truetype'),
+        url('FontAwesome5FreeRegular.svg#FontAwesome5FreeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /******main settings******/
 body {
 	-webkit-box-sizing: border-box;
@@ -48,13 +62,40 @@ body {
 	box-sizing: border-box;
 	font-family: 'Roboto Slab';
 	font-size: 14px;
+	color: #555;
 }
 .wrap {
 	padding: 40px 20px;
+	min-width: 1140px;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+.section-title {
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-size: 20px;
+	position: relative;
+	margin-bottom: 60px;
+}
+.section-title:after {
+	display: block;
+	position: absolute;
+	content: '';
+	background-color: #555;
+	height: 2px;
+	width: 50px;
+	bottom: -30px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.section-subtitle {
+	font-family: 'Roboto Slab';
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 70px;
 }
 /******HOME********/
-#home {
-	height: 100vh;
+.home {
 	background: url(../img/home-bg.jpg)center/cover;
 	text-align: center;
 }
@@ -125,35 +166,14 @@ body {
 	outline: none;
 	cursor: pointer;
 	border: 1px solid #fff;
+	border-radius: 2px;
+	margin-bottom: 260px;
 }
 
 /****Services***/
-#services {
+.services {
 	text-align: center;
-}
-.services-title {
-	text-transform: uppercase;
-	font-family: 'Montserrat';
-	color: #555;
-	font-size: 20px;
-	position: relative;
-	margin-bottom: 60px;
-}
-.services-title:after {
-	display: block;
-	position: absolute;
-	content: '';
-	background-color: #555;
-	height: 2px;
-	width: 50px;
-	bottom: -30px;
-	left: 50%;
-	transform: translate(-50%);
-}
-.services-subtitle {
-	font-size: 16px;
-	color: #555;
-	margin-bottom: 70px;
+	padding: 100px 0;
 }
 .services-cart-area {
 	display: -webkit-flex;
@@ -161,6 +181,10 @@ body {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: space-between;
+}
+.services-cart:nth-child(2){
+	margin: 0 45px;
 }
 .services-cart-logo {
 	font-size: 40px;
@@ -171,8 +195,100 @@ body {
 	background-color: transparent;
 	border: 2px solid #dddddd;
 	border-radius: 50%;
+	cursor: pointer;
+	margin-bottom: 29px;
 }
 .services-cart-logo:hover {
 	background-color: #c0301c;
 	color: #fff;
+}
+.services-cart-title {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+.services-cart-text {
+	font-size: 14px;
+	line-height: 24px;
+	max-width: 435px;
+	
+}
+		/*****About Us********/
+
+.about {
+	text-align: center;
+	background-color: #f8f8f8;
+	padding: 100px 0;
+}
+.about-text-area {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 71px;
+	text-align: left;
+}
+.about-text-area-content {
+	max-width: 555px;
+	line-height: 24px;
+}
+/*******Slider*****/
+
+.slider {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.slider-item-logo {
+	position: relative;
+}
+.slider-item-logo-wrap {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	background-color: rgb(85, 85, 85,.5);
+	visibility: hidden;
+}
+.slider-item-logo:hover>.slider-item-logo-wrap {
+	visibility: visible;
+}
+
+.slider-link-block {
+	position: absolute;
+	bottom: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	transform: translate(-50%);
+	margin-left: 50%;
+	visibility: hidden;
+}
+.slider-item-logo:hover>.slider-link-block {
+	visibility: visible;
+}
+
+.slider-link  {
+	padding: 6px 9px;
+	color: #fff;
+}
+.slider-link:hover {
+	background-color: #c0301c;
+}
+.slider-button-controls {
+	font-family: 'Font Awesome 5 Free';
+	font-size: 14px;
+	height: 14px;
+	width: 9px;
+	content: '\f104';
+
 }
