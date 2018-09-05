@@ -57,6 +57,8 @@ table {
 
 /******main settings******/
 body {
+	min-width: 1140px;
+	max-width: 1500px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -65,9 +67,11 @@ body {
 	color: #555;
 }
 .wrap {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	padding:0 20px;
-	min-width: 1140px;
-	max-width: 1500px;
+	width: 100%;
 	margin: 0 auto;
 }
 .section-title {
@@ -339,6 +343,9 @@ body {
 	color: #c0301c;
 }
 .achive-area {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -666,7 +673,7 @@ body {
 	color: #555;
 }
 .contacts-form {
-	/*max-width: 730px;*/
+	max-width: 730px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -678,6 +685,9 @@ body {
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 	flex: 8;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .contacts-form-input {
 	margin: 0 30px 20px 0;
@@ -693,15 +703,21 @@ body {
 }
 .contacts-form-input:focus {
 	border: 1px solid #c0301c;
+	outline:none;
+}
+.contacts-form-input:focus::placeholder {
+	color: transparent;
 }
 .contacts-form-input::placeholder {
 	font-family: 'Roboto Slab';
 	font-size: 12px;
 	color: #555;
 	text-transform: uppercase;
+	-webkit-opacity:.5;
 }
-.contacts-form-textarea {
+.contacts-form>.contacts-form-textarea {
 	width: 730px;
+	margin-right: 0;
 	height: 105px;
 	resize: none;
 	-webkit-box-sizing: border-box;
@@ -710,7 +726,7 @@ body {
 	font-size: 12px;
 	font-family: 'Roboto Slab';
 }
-.contacts-form-btn {
+.contacts-form-input.contacts-form-btn {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -722,10 +738,15 @@ body {
 	font-family: 'Roboto Slab';
 	color: #a9a9a9;
 	font-size: 12px;
+	margin-bottom: 0;
+	margin-right: 40px;
 }
 .contacts-form-btn:hover {
 	background-color: #c0301c;
 	color: #fff;
 	transition: background 0.35s;
+}
+.contacts-form-subtext {
+	
 }
 
