@@ -414,18 +414,13 @@ body {
 }
 .achive-content-btn {
 	padding: 15px 20px 13px 20px;
-	background-color: transparent;
-	color: #fff;
+	background-color: #fff;
+	color: #c0301c;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 .arow-btn {
 	margin-left: 12px;
-}
-
-.achive-content-btn:hover {
-	background-color: #fff;
-	color: #c0301c;
 }
 .achive-cart:hover .achive-wrap,
 .achive-cart:hover .achive-content {
@@ -471,6 +466,7 @@ body {
 	background-color: #fff;
 	color: #c0301c;
 	transition: background .3s;
+	border: none;
 }
 
 		/****Blog*****/
@@ -772,6 +768,7 @@ body {
 	margin-right: 40px;
 }
 .contacts-form-btn:hover {
+	border: none;
 	cursor: pointer;
 	background-color: #c0301c;
 	color: #fff;
@@ -800,6 +797,11 @@ body {
 	font-size: 12px;
 	border: 2px solid;
 	border-radius: 50%;
+}
+.footer-title-item:hover {
+	background-color: #fff;
+	color: #c0130c;
+	cursor: pointer;
 }
 .footer-subtitle {
 	color: #fff;
